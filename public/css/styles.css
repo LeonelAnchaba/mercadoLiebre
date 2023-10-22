@@ -1,0 +1,182 @@
+:root {
+    --color-amarillo :#EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-gris-oscuro: #666;
+    --color-gris-claro: #ebebeb;
+    --color-verde: #39b54a;
+}
+
+/*Tamaños tipograficos*/
+
+header span {
+    font-size: 16px
+}
+
+header a {
+    font-size: 16px;
+}
+
+
+main h2 {
+    font-size: 24px
+}
+main h3 {
+    font-size: 18px;
+}
+main h4 {
+    font-size: 16px;
+}
+main article h2 {
+    font-size: 16px;
+}
+
+footer h3 {
+    font-size:16px;
+}
+
+footer p {
+    font-size:12px
+}
+
+footer h4 {
+    font-size: 12px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style:none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
+
+/*color de fondo y dimension*/
+header {
+    background-color: var(--color-amarillo);
+    background-size: 120px 120px;
+}
+
+/*logo de ML*/
+header img {
+    width: 55%;
+    padding: 30px;
+}
+
+/* posicion de barra de busqueda*/
+.container {
+    margin-left: 20px;
+}
+
+/*diseño de la barra*/
+input {
+    padding: 3px;
+    padding-right: 70px;
+    letter-spacing: -1px;
+}
+
+/*posicion del boton search y diseño*/
+.boton {
+    margin-left: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+    border-radius:3px;
+    border: solid rgb(52, 51, 51) 1px;
+    margin-top:3px;
+    margin-bottom:10px;
+
+}
+
+
+.header__cuotas {
+    text-align: center;
+}
+
+/*posicion del menu de navegacion.
+¿Por qué tengo que ponerle margen negativo para que quede al borde?*/
+a {
+    margin-left: -10%;
+    color:black
+}
+
+.burger-menu {
+    width:11%;
+    background-color: var(--color-celeste);
+    padding:10px;
+    text-align:center;
+    color:white;
+    margin-left: 45%;
+    border-radius:5px;
+}
+
+
+
+
+/*body de la pagina. No lo requeria pero meti un poco de mano*/
+
+.main__banner img {
+    padding-top:5px;
+    border-radius: 5%;
+    width:95%;
+}
+
+main {
+    text-align:center;
+    background-color: var(--color-gris-claro);
+}
+
+article {
+    border:black solid 1px;
+    margin: 10px 35px;
+    background-color: white;
+}
+article h4 {
+    color:var(--color-verde)
+}
+
+
+/*footer*/
+footer {
+    text-align: center;
+    margin-right:10%;
+    padding-top:20px
+}
+
+footer svg{
+    fill:var(--color-celeste);
+    height: 2em;
+    margin-top: 10px;
+}
+
+footer h3 {
+    margin-top:-1px;
+    margin-bottom:-10px;
+}
+
+
+p {
+    color:var(--color-gris-oscuro);
+}
+
+
+footer h4 {
+    text-align: left;
+    margin-left: -10%;
+    color:var(--color-gris-oscuro);
+    padding-top:30px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
