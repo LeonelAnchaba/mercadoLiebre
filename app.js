@@ -40,5 +40,5 @@ app.get ("/misCompras", ((req, res) =>{
 
 
 app.listen (3000, ()=>{
-    console.log("MercadoLiebre corriendo en puerto 3000");
+    console.log("MercadoLiebre corriendo en https://localhost:3000");
 })
