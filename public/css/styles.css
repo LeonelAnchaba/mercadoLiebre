@@ -130,6 +130,10 @@ main {
     background-color: var(--color-gris-claro);
 }
 
+main article img {
+    width: 91%;
+}
+
 article {
     border:black solid 1px;
     margin: 10px 35px;
