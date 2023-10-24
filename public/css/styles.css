@@ -8,15 +8,12 @@
 }
 
 /*Tamaños tipograficos*/
-
 header span {
     font-size: 16px
 }
-
 header a {
     font-size: 16px;
 }
-
 
 main h2 {
     font-size: 24px
@@ -34,15 +31,12 @@ main article h2 {
 footer h3 {
     font-size:16px;
 }
-
 footer p {
     font-size:12px
 }
-
 footer h4 {
     font-size: 12px;
 }
-
 
 
 * {
@@ -51,6 +45,8 @@ footer h4 {
     list-style:none;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    margin:0px;
+    padding:0px;
 }
 
 
@@ -68,15 +64,13 @@ header img {
 }
 
 /* posicion de barra de busqueda*/
-.container {
-    margin-left: 20px;
-}
 
 /*diseño de la barra*/
-input {
+header form input{
     padding: 3px;
     padding-right: 70px;
     letter-spacing: -1px;
+    margin-left: 20px;
 }
 
 /*posicion del boton search y diseño*/
@@ -95,13 +89,15 @@ input {
 
 .header__cuotas {
     text-align: center;
+    padding-bottom:5%
 }
 
 /*posicion del menu de navegacion.
 ¿Por qué tengo que ponerle margen negativo para que quede al borde?*/
 a {
-    margin-left: -10%;
-    color:black
+    color:black;
+    cursor: pointer;
+    margin-left:2%
 }
 
 .burger-menu {
@@ -128,6 +124,7 @@ a {
 main {
     text-align:center;
     background-color: var(--color-gris-claro);
+    padding-bottom:10px;
 }
 
 main article img {
@@ -145,39 +142,36 @@ article h4 {
 
 
 /*footer*/
+
+
 footer {
     text-align: center;
-    margin-right:10%;
-    padding-top:20px
+    padding:0px 8px 8px 8px;
+    background-color: var(--color-gris-claro);
+}
+
+footer ul{
+    background-color: white;
 }
 
 footer svg{
     fill:var(--color-celeste);
     height: 2em;
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-bottom:10px;
 }
-
-footer h3 {
-    margin-top:-1px;
-    margin-bottom:-10px;
-}
-
 
 p {
     color:var(--color-gris-oscuro);
+    margin:0% 10% 0% 10%
 }
-
 
 footer h4 {
     text-align: left;
-    margin-left: -10%;
     color:var(--color-gris-oscuro);
-    padding-top:30px;
+    padding:30px 0px 10px 20px
 }
 
-footer ul li {
-    margin-bottom: 10px;
-}
 
 
 
