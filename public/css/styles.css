@@ -54,7 +54,6 @@ footer h4 {
 /*color de fondo y dimension*/
 header {
     background-color: var(--color-amarillo);
-    background-size: 120px 120px;
 }
 
 /*logo de ML*/
