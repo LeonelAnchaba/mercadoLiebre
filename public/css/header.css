@@ -1,0 +1,87 @@
+/*color de fondo y dimension*/
+header {
+    background-color: var(--color-amarillo);
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+}
+
+/*logo de ML*/
+header img {
+    width: 55%;
+    padding: 30px;
+}
+
+/* posicion de barra de busqueda*/
+.header__nav__barra_y_search {
+    display:flex
+}
+/*diseño de la barra*/
+.header__nav__barra_y_search  input{
+    padding: 1px;
+    padding-right: 70px;
+    letter-spacing: -1px;
+    margin-left: 20px;
+}
+
+/*posicion del boton search y diseño*/
+.boton {
+    margin-left: 10px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+    border-radius:3px;
+    border: solid 1px rgb(117, 117, 117);
+    margin-bottom:10px;
+}
+
+
+.header__cuotas {
+    text-align: center;
+    padding-bottom:5%;
+}
+
+/*posicion del menu de navegacion.*/
+.header__nav {
+    color:black;
+    cursor: pointer;
+    padding-left:2%;
+    display:none;
+}
+
+.header__nav a {
+    color:black;
+}
+
+.burger-menu {
+    width: 11%;
+    background-color: var(--color-celeste);
+    padding:10px;
+    text-align:center;
+    color:white;
+    margin:auto;
+    border-radius:5px;
+}
+
+/*En nuestras dev tools el minimo para tablet es 426px*/
+@media (min-width: 361px){
+    .header__nav {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .burger-menu {
+        display:none
+    }
+}
+
+@media (min-width: 769px){
+    .header__nav {
+        display:flex;
+        justify-content: space-between;
+    }
+    .burger-menu {
+        display:none
+    }
+}
