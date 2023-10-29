@@ -1,0 +1,103 @@
+/*body de la pagina. No lo requeria pero meti un poco de mano*/
+
+body {
+    width: 100vw;
+    background-color: var(--color-gris-claro);
+}
+.main__banner img {
+    width:100%
+}
+
+.main__section__title {
+    width:90%;
+    margin:auto;
+    padding:3% 0% 3%;
+    color: var(--color-gris-oscuro)
+}
+
+.main__section__article {
+    width: 90%;
+    background-color: white;
+    margin:auto;
+    margin-bottom:10px
+}
+.main__section__article div{
+    display:flex;
+    flex-direction: column;
+    padding: 15px;
+    border-top: 1px solid var(--color-gris-claro);
+}
+
+.main__section__article img {
+    width:100%;
+
+}
+.main__section__article svg{
+    fill:var(--color-verde);
+
+}
+.main__section__article div i {
+    outline: 2px rgb(171, 200, 176) solid;
+    margin: auto;
+    border-radius: 50%;
+    padding:2%;
+    margin-left:0%;
+}
+
+.main__section__article__description {
+    padding:10px 0px 10px 0px;
+    color:var(--color-gris-oscuro);
+    display:none
+}
+
+.main__section__article h4 {
+    color:var(--color-verde)
+}
+
+
+/*footer*/
+
+
+footer {
+    text-align: center;
+    padding:0px 8px 8px 8px;
+    background-color: var(--color-gris-claro);
+}
+
+footer ul{
+    background-color: white;
+}
+
+footer svg{
+    fill:var(--color-celeste);
+    height: 2em;
+    margin-top: 50px;
+    margin-bottom:10px;
+}
+
+p {
+    color:var(--color-gris-oscuro);
+    margin:0% 10% 0% 10%
+}
+
+footer h4 {
+    text-align: left;
+    color:var(--color-gris-oscuro);
+    padding:30px 0px 10px 20px
+}
+
+/*En nuestras dev tools el minimo para tablet es 426px*/
+@media (min-width: 361px){
+    .main__section__article__description {
+        display:flex
+    }
+    .main__section__article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+/*Ya que en este caso la vista tanto para Tablet como para
+Desktop va a ser la misma, no hace falta marcar un punto de
+quiebre para esta última*/
+
+
