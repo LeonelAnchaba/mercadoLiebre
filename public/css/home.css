@@ -34,7 +34,7 @@ body {
 }
 .main__section__article svg{
     fill:var(--color-verde);
-
+    width: 1rem;
 }
 .main__section__article div i {
     outline: 2px rgb(171, 200, 176) solid;
