@@ -41,6 +41,10 @@ header img {
     padding-bottom:5%;
 }
 
+header svg {
+    width: 1rem;
+}
+
 /*posicion del menu de navegacion.*/
 .header__nav {
     color:black;
