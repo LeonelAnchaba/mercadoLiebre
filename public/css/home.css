@@ -87,7 +87,7 @@ footer h4 {
 }
 
 /*En nuestras dev tools el minimo para tablet es 426px*/
-@media (min-width: 361px){
+@media (min-width: 426px){
     .main__section__article__description {
         display:flex
     }

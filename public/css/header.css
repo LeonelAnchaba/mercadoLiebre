@@ -1,49 +1,66 @@
 /*color de fondo y dimension*/
-header {
+.header_general {
     background-color: var(--color-amarillo);
-    width: 100vw;
     display:flex;
     flex-direction: column;
+    padding: 20px 10px 0px 10px;
 }
 
-/*logo de ML*/
-header img {
-    width: 55%;
-    padding: 30px;
+
+.header__div__logo_y_barra {
+    display:flex;
+    align-items: center;
+    width:93vw
+}
+
+.header__div__logo_y_barra img {
+    width: 50vw;
+
 }
 
 /* posicion de barra de busqueda*/
 .header__nav__barra_y_search {
-    display:flex
+    display:flex;
+    width:50vw;
 }
 /*diseño de la barra*/
 .header__nav__barra_y_search  input{
-    padding: 1px;
-    padding-right: 70px;
-    letter-spacing: -1px;
-    margin-left: 20px;
+    padding: 4px 0px 6px 4px;
+    border-radius: 5px 0px 0px 5px;
+    border: solid 1px white;
+    width:100%;
 }
+.header__nav__barra_y_search form {
+    padding-left:5%;
+    width: 100%;
+}
+
 
 /*posicion del boton search y diseño*/
 .boton {
-    margin-left: 10px;
     background-color: white;
     width: 20px;
     text-align: center;
-    border-radius:3px;
-    border: solid 1px rgb(117, 117, 117);
-    margin-bottom:10px;
+    border-radius:0px 5px 5px 0px;
+    border: solid 1px white;
+    padding: 4px 0px 2px 0px;
+}
+.boton i {
+    color:#666
 }
 
+/* ///////////////////////////// */
 
 .header__cuotas {
     text-align: center;
-    padding-bottom:5%;
+    padding:5% 0px;
 }
 
-header svg {
+header i {
     width: 1rem;
 }
+
+/* ///////////////////////////// */
 
 /*posicion del menu de navegacion.*/
 .header__nav {
@@ -58,9 +75,9 @@ header svg {
 }
 
 .burger-menu {
-    width: 11%;
+    max-width: 12%;
     background-color: var(--color-celeste);
-    padding:10px;
+    padding:10px 10px;
     text-align:center;
     color:white;
     margin:auto;
@@ -68,7 +85,7 @@ header svg {
 }
 
 /*En nuestras dev tools el minimo para tablet es 426px*/
-@media (min-width: 361px){
+@media (min-width: 426px){
     .header__nav {
         display:flex;
         flex-direction: row;
@@ -83,7 +100,6 @@ header svg {
 @media (min-width: 769px){
     .header__nav {
         display:flex;
-        justify-content: space-between;
     }
     .burger-menu {
         display:none
