@@ -83,7 +83,7 @@ header i {
 }
 
 /*En nuestras dev tools el minimo para tablet es 426px*/
-@media (min-width: 426px){
+@media (min-width: 768px){
     .burger-menu {
         display:none
     }
@@ -121,36 +121,15 @@ header i {
     }
     .header__nav ul{
         display:flex;
-        gap:15px
+        gap:15px;
     }
-    .header__nav__left {
-        margin:0px 10px 15px 10px;
-
+    .header__nav {
+        justify-content: space-between;
     }
 
 }  
 
-@media (min-width: 710px) {
-    .header__nav {
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding:10px
-    }
-    .header__nav ul{
-        display:flex;
-        gap:15px
-    }
-
-    .header__nav__left {
-        margin-left:15px;
-    }
-    .header__nav__right{
-        margin-right:15px;
-    }
-}
-
-@media (min-width: 1025px){
+@media (min-width: 1024px){
     .header__div__logo_barra_y_cuotas {
         max-width: 1200px;
         margin:auto;

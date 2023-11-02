@@ -90,7 +90,7 @@ footer h4 {
     padding:30px 0px 10px 20px
 }
 
-@media (min-width: 426px){
+@media (min-width: 768px){
     .main__section__article__description {
         display:flex
     }
@@ -106,15 +106,10 @@ footer h4 {
         flex-wrap:wrap;   
     }
 }
-@media (min-width: 769px){
-    .main__section__article {
-        max-width: 190px;
-    }
-}
 
-@media (min-width: 1025px){
+@media (min-width: 1024px){
     main section{
-        max-width:1144px;
+        max-width:1200px;
         margin:auto;
     }
     .main__section__article {
