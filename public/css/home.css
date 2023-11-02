@@ -19,11 +19,13 @@ body {
     width: 90%;
     background-color: white;
     margin:auto;
-    margin-bottom:10px
+    margin-bottom:10px;
+    outline: solid black 1px;
+    max-width: 337.68px;
 }
 .main__section__article div{
     display:flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 15px;
     border-top: 1px solid var(--color-gris-claro);
 }
@@ -32,16 +34,18 @@ body {
     width:100%;
 
 }
-.main__section__article svg{
-    fill:var(--color-verde);
-    width: 1rem;
-}
+
 .main__section__article div i {
-    outline: 2px rgb(171, 200, 176) solid;
-    margin: auto;
+    outline: 1px solid #39b54a;
+    font-size:16px;
+    padding:5px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
     border-radius: 50%;
-    padding:2%;
-    margin-left:0%;
+    color: var(--color-verde);
+    margin-left: 87%;
+    margin-top:-30px
 }
 
 .main__section__article__description {
@@ -51,7 +55,11 @@ body {
 }
 
 .main__section__article h4 {
-    color:var(--color-verde)
+    color:var(--color-verde);
+    width:70%
+}
+.main__section__article h3 {
+    width:30%
 }
 
 
@@ -86,13 +94,13 @@ footer h4 {
     padding:30px 0px 10px 20px
 }
 
-/*En nuestras dev tools el minimo para tablet es 426px*/
 @media (min-width: 426px){
     .main__section__article__description {
         display:flex
     }
     .main__section__article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 337.68px;
     }
 }
 
