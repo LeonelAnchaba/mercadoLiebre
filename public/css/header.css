@@ -3,36 +3,34 @@
     background-color: var(--color-amarillo);
     display:flex;
     flex-direction: column;
-    padding: 20px 10px 0px 10px;
+    padding: 5vw 5vw 0vw 5vw;
 }
 
 
-.header__div__logo_y_barra {
+.header__div__logo_barra_y_cuotas {
     display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    width:93vw
+    width:90vw;
 }
 
-.header__div__logo_y_barra img {
-    width: 50vw;
-
+.header__div__logo_barra_y_cuotas img {
+    width: 50%;
+    padding:0px 10px;
 }
 
 /* posicion de barra de busqueda*/
 .header__nav__barra_y_search {
     display:flex;
-    width:50vw;
+    width:50%;
 }
 /*diseño de la barra*/
 .header__nav__barra_y_search  input{
     padding: 4px 0px 6px 4px;
     border-radius: 5px 0px 0px 5px;
     border: solid 1px white;
-    width:100%;
-}
-.header__nav__barra_y_search form {
-    padding-left:5%;
-    width: 100%;
+    width:40vw;
 }
 
 
@@ -86,22 +84,50 @@ header i {
 
 /*En nuestras dev tools el minimo para tablet es 426px*/
 @media (min-width: 426px){
-    .header__nav {
-        display:flex;
-        flex-direction: row;
+    .burger-menu {
+        display:none
+    }
+    /*////////////////////////////////////////*/
+    .header_general {
+        padding: 2vw 0vw 0vw 0vw;
+    }
+
+    .header__div__logo_barra_y_cuotas {
         justify-content: space-around;
+        width:100vw;
     }
 
-    .burger-menu {
-        display:none
+    .header__nav__barra_y_search{
+        width:30%;
     }
-}
 
-@media (min-width: 769px){
+    .header__nav__barra_y_search  input{
+        padding: 4px 0px 6px 4px;
+        border-radius: 5px 0px 0px 5px;
+        border: solid 1px white;
+        width:27vw
+    }
+
+    .header__div__logo_barra_y_cuotas img{
+        width: 28%;   
+    }
+    /*////////////////////////////////////////*/  
     .header__nav {
         display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:10px
     }
-    .burger-menu {
-        display:none
+    .header__nav ul{
+        display:flex;
+        gap:15px
+    }
+
+    .header__nav__left {
+        margin-left:15px;
+    }
+    .header__nav__right{
+        margin-right:15px;
     }
 }
+
