@@ -111,7 +111,26 @@ header i {
     .header__div__logo_barra_y_cuotas img{
         width: 28%;   
     }
-    /*////////////////////////////////////////*/  
+    /*////////////////////////////////////////*/ 
+    .header__nav {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:10px;
+        justify-content: center;
+    }
+    .header__nav ul{
+        display:flex;
+        gap:15px
+    }
+    .header__nav__left {
+        margin:0px 10px 15px 10px;
+
+    }
+
+}  
+
+@media (min-width: 710px) {
     .header__nav {
         display:flex;
         flex-wrap: wrap;
@@ -128,6 +147,21 @@ header i {
     }
     .header__nav__right{
         margin-right:15px;
+    }
+}
+
+@media (min-width: 1025px){
+    .header__div__logo_barra_y_cuotas {
+        max-width: 1200px;
+        margin:auto;
+    }
+    .header__div__logo_barra_y_cuotas input {
+        max-width:300px;
+    }
+    .header__nav {
+        max-width: 1200px;
+        gap:150px;
+        margin:auto
     }
 }
 
