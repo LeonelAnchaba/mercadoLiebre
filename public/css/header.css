@@ -1,49 +1,64 @@
 /*color de fondo y dimension*/
-header {
+.header_general {
     background-color: var(--color-amarillo);
-    width: 100vw;
     display:flex;
     flex-direction: column;
+    padding: 5vw 5vw 0vw 5vw;
 }
 
-/*logo de ML*/
-header img {
-    width: 55%;
-    padding: 30px;
+
+.header__div__logo_barra_y_cuotas {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:90vw;
+}
+
+.header__div__logo_barra_y_cuotas img {
+    width: 50%;
+    padding:0px 10px;
 }
 
 /* posicion de barra de busqueda*/
 .header__nav__barra_y_search {
-    display:flex
+    display:flex;
+    width:50%;
 }
 /*diseño de la barra*/
 .header__nav__barra_y_search  input{
-    padding: 1px;
-    padding-right: 70px;
-    letter-spacing: -1px;
-    margin-left: 20px;
+    padding: 4px 0px 6px 4px;
+    border-radius: 5px 0px 0px 5px;
+    border: solid 1px white;
+    width:40vw;
 }
+
 
 /*posicion del boton search y diseño*/
 .boton {
-    margin-left: 10px;
     background-color: white;
     width: 20px;
     text-align: center;
-    border-radius:3px;
-    border: solid 1px rgb(117, 117, 117);
-    margin-bottom:10px;
+    border-radius:0px 5px 5px 0px;
+    border: solid 1px white;
+    padding: 4px 0px 2px 0px;
+}
+.boton i {
+    color:#666
 }
 
+/* ///////////////////////////// */
 
 .header__cuotas {
     text-align: center;
-    padding-bottom:5%;
+    padding:5% 0px;
 }
 
-header svg {
+header i {
     width: 1rem;
 }
+
+/* ///////////////////////////// */
 
 /*posicion del menu de navegacion.*/
 .header__nav {
@@ -58,9 +73,9 @@ header svg {
 }
 
 .burger-menu {
-    width: 11%;
+    max-width: 12%;
     background-color: var(--color-celeste);
-    padding:10px;
+    padding:10px 10px;
     text-align:center;
     color:white;
     margin:auto;
@@ -68,24 +83,85 @@ header svg {
 }
 
 /*En nuestras dev tools el minimo para tablet es 426px*/
-@media (min-width: 361px){
-    .header__nav {
-        display:flex;
-        flex-direction: row;
+@media (min-width: 426px){
+    .burger-menu {
+        display:none
+    }
+    /*////////////////////////////////////////*/
+    .header_general {
+        padding: 2vw 0vw 0vw 0vw;
+    }
+
+    .header__div__logo_barra_y_cuotas {
         justify-content: space-around;
+        width:100vw;
     }
 
-    .burger-menu {
-        display:none
+    .header__nav__barra_y_search{
+        width:30%;
     }
-}
 
-@media (min-width: 769px){
+    .header__nav__barra_y_search  input{
+        padding: 4px 0px 6px 4px;
+        border-radius: 5px 0px 0px 5px;
+        border: solid 1px white;
+        width:27vw
+    }
+
+    .header__div__logo_barra_y_cuotas img{
+        width: 28%;   
+    }
+    /*////////////////////////////////////////*/ 
     .header__nav {
         display:flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+        padding:10px;
+        justify-content: center;
     }
-    .burger-menu {
-        display:none
+    .header__nav ul{
+        display:flex;
+        gap:15px
+    }
+    .header__nav__left {
+        margin:0px 10px 15px 10px;
+
+    }
+
+}  
+
+@media (min-width: 710px) {
+    .header__nav {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:10px
+    }
+    .header__nav ul{
+        display:flex;
+        gap:15px
+    }
+
+    .header__nav__left {
+        margin-left:15px;
+    }
+    .header__nav__right{
+        margin-right:15px;
     }
 }
+
+@media (min-width: 1025px){
+    .header__div__logo_barra_y_cuotas {
+        max-width: 1200px;
+        margin:auto;
+    }
+    .header__div__logo_barra_y_cuotas input {
+        max-width:300px;
+    }
+    .header__nav {
+        max-width: 1200px;
+        gap:150px;
+        margin:auto
+    }
+}
+
