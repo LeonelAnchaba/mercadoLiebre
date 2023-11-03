@@ -117,17 +117,19 @@ header i {
         flex-wrap: wrap;
         justify-content: space-between;
         padding:10px;
-        justify-content: center;
+
     }
     .header__nav ul{
         display:flex;
-        gap:15px;
+        gap:15px
     }
-    .header__nav {
-        justify-content: space-between;
+    .header__nav__left {
+        margin:0px 10px 15px 10px;
+
     }
 
 }  
+
 
 @media (min-width: 1024px){
     .header__div__logo_barra_y_cuotas {
