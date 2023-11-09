@@ -55,16 +55,19 @@
             </div><br>
     </header>
     <main>
-        <form action="/login" method="post" class="main__form">
+        <fieldset>
+            <h2>Ingresa a tu cuenta</h2>
+        <form action="/login" method="post" class="main__form__login">
             <label for="usuario"></label>
             <input type="text" name="usuario" placeholder="Nombre de usuario">
 
-            <label for="password">Nueva contraseña :</label>
+            <label for="password"></label>
             <input type="password" name="password" placeholder="Ingrese su contraseña" required>
 
-            <button type="submit">Ingresar</button>
+            <button type="submit" class="button__login">Ingresar</button>
 
         </form>
+        </fieldset>
     </main>
     <footer>
         <ul>

@@ -55,12 +55,11 @@
             </div><br>
     </header>
 
-    <main>
         <main class="registro__main">
             <fieldset>
-                <h2>Crea tu cuenta</h2>
+                <h2>Creá tu usuario</h2>
                 
-                <form action="/register" method="post" class="main__form">
+                <form action="/register" method="post" class="main__form__register">
                 <label for="nombre"></label>
                 <input type="text" name="nombre" placeholder="Nombre y Apellido" id="nombre">
 
@@ -70,6 +69,7 @@
                 <label for="email"></label>
                 <input type="email" name="email" placeholder="E-mail">
 
+                <label for="date">Fecha de nacimiento :</label>
                 <input type="date" max="2005-12-31" value="1999-08-15" id="fecha_de_nacimiento">
                
                 <label for="domicilio"></label>
@@ -80,7 +80,7 @@
                     <option value="comprador">Comprador</option>
                     <option value="vendedor">Venderdor</option>                   
                 </select>
-                    <div>
+                    <div class="register__categorias">
                         <label>Categorías de interés :</label>
                         <div>
                             <input type="checkbox" name="categorias" value="electro" id="electro">
@@ -113,7 +113,7 @@
                     </div>
 
                     <label>Seleccionar foto de perfil :</label>
-                    <input type="file" name="avatar" accept="image/*"> 
+                    <input type="file" name="avatar" accept="image/*" class="register__foto"> 
 
                     <label for="password">Nueva contraseña :</label>
                 <input type="password" name="password" placeholder="Debe contener una Mayuscula" required>

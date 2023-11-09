@@ -1,20 +1,53 @@
-.registro__main form{
+.main__form__register {
     display:flex;
     flex-direction: column;
-    width:100%;
-    outline:solid black 1px;
+    width:80%;
+    margin:auto;
     gap: 10px;
 }
 
-.contenedor_botones {
-    margin:auto;
-    outline:solid red 2px;
-    
+.main__form__register input {
+    padding:10px;
+    border-radius: 10px;
+    border:solid white 1px;
 }
 
-button {
-    width:30vw;
+.main__form__register select {
+    padding:10px;
+    border-radius: 10px;
+    border:solid white 1px;
+}
+
+.main__form__register label {
+    font-size: 16px;
+}
+
+.register__categorias div{
+    margin:20px;
+    color:var(--color-gris-oscuro)
+}
+
+.register__foto {
+    background-color: white;
+}
+
+.contenedor_botones {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contenedor_botones button {
+    width:45%;
     margin: 10px;
     background-color: var(--color-celeste);
-    color:white
+    color:white;
+    padding:5px;
+    border-radius: 10px;
+}
+
+@media (min-width:1024px) {
+    main {
+        max-width: 768px;
+        margin:auto;
+    }
 }
