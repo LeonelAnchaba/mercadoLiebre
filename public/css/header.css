@@ -15,7 +15,7 @@
     width:90vw;
 }
 
-.header__div__logo_barra_y_cuotas img {
+.header__div__logo_barra_y_cuotas a {
     width: 50%;
     padding:0px 10px;
 }
@@ -108,7 +108,7 @@ header i {
         width:27vw
     }
 
-    .header__div__logo_barra_y_cuotas img{
+    .header__div__logo_barra_y_cuotas a{
         width: 28%;   
     }
     /*////////////////////////////////////////*/ 

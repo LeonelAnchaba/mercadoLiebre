@@ -55,90 +55,81 @@
             </div><br>
     </header>
 
-    <main>
-        <div class="main__banner">
-            <img  src="/images/img-home-banner.jpg">
-        </div>
+        <main class="registro__main">
+            <fieldset>
+                <h2>Creá tu usuario</h2>
+                
+                <form action="/register" method="post" class="main__form__register">
+                <label for="nombre"></label>
+                <input type="text" name="nombre" placeholder="Nombre y Apellido" id="nombre">
 
-        <section>
-            <h2 class="main__section__title">Basado en tu última visita</h2>
-            <article class="main__section__article">
-                <img src="/images/img-cafetera-moulinex.jpg">
-                <div>
-                    <i class="fa-solid fa-truck"></i>
-                    <h3>$6.770</h3>
-                    <h4>40% Off</h4>
-                    <h2 class="main__section__article__description">Cafetera Moulinex</h2
-                        ></div>
-            </article>
-            <article class="main__section__article">
-                <img src="/images/img-macbook-pro-2019.jpg">
-                <div>
-                    <i class="fa-solid fa-truck"></i>
-                    <h3>$230.000</h3>
-                    <h4>20% Off</h4>
-                    <h2 class="main__section__article__description">MacBook Pro 2019</h2>
-                </div>
-            </article>
-            <article class="main__section__article">
-                <img src="/images/img-samsung-galaxy-s10.jpg">
-                <div>
-                    <i class="fa-solid fa-truck"></i>
-                    <h3>$70.500</h3>
-                    <h4>10% Off</h4>
-                    <h2 class="main__section__article__description">Samsung Galaxy S10</h
-                        2></div>
-            </article>
-            <article class="main__section__article">
-                <img src="/images/img-tv-samsung-smart.jpg">
-                <div>
-                    <i class="fa-solid fa-truck"></i>
-                    <h3>$23.200</h3>
-                    <h4>5% Off</h4>
-                    <h2 class="main__section__article__description">SmartTv Samsung 43"</
-                        h2></div>
-            </article>
-        </section>
+                <label for="usuario"></label>
+                <input type="text" name="usuario" placeholder="Nombre de usuario">
+                
+                <label for="email"></label>
+                <input type="email" name="email" placeholder="E-mail">
 
-        <section>
-            <h2  class="main__section__title">Ofertas</h2>
-            <article class="main__section__article">
-                <img src="/images/img-cafetera-moulinex.jpg">
-                <div>
-                    <i class="fa-solid fa-truck"></i>
-                    <h3>$6.770</h3>
-                    <h4>40% Off</h4>
-                    <h2 class="main__section__article__description">Cafetera Moulinex</h2
-                        ></div>
-            </article>
-            <article class="main__section__article">
-                <img src="/images/img-macbook-pro-2019.jpg">
-                <div>
-                    <i class="fa-solid fa-truck"></i>
-                    <h3>$230.000</h3>
-                    <h4>20% Off</h4>
-                    <h2 class="main__section__article__description">MacBook Pro 2019</h2>
-                </div>
-            </article>
-            <article class="main__section__article">
-                <img src="/images/img-samsung-galaxy-s10.jpg">
-                <div>
-                    <i class="fa-solid fa-truck"></i>
-                    <h3>$70.500</h3>
-                    <h4>10% Off</h4>
-                    <h2 class="main__section__article__description">Samsung Galaxy S10</h
-                        2></div>
-            </article>
-            <article class="main__section__article">
-                <img src="/images/img-tv-samsung-smart.jpg">
-                <div>
-                    <i class="fa-solid fa-truck"></i>
-                    <h3>$23.200</h3>
-                    <h4>5% Off</h4>
-                    <h2 class="main__section__article__description">SmartTv Samsung 43"</
-                        h2></div>
-            </article>
-        </section>
+                <label for="date">Fecha de nacimiento :</label>
+                <input type="date" max="2005-12-31" value="1999-08-15" id="fecha_de_nacimiento">
+               
+                <label for="domicilio"></label>
+                <input type="text" name="domicilio" placeholder="Ingrese su domicilio">
+
+                <label>Perfil de usuario :</label>
+                <select name="perfil">
+                    <option value="comprador">Comprador</option>
+                    <option value="vendedor">Venderdor</option>                   
+                </select>
+                    <div class="register__categorias">
+                        <label>Categorías de interés :</label>
+                        <div>
+                            <input type="checkbox" name="categorias" value="electro" id="electro">
+                            <label for="electro">Electrodomésticos</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="categorias" value="computacion" id="computacion">
+                            <label for="computacion">Computación</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="categorias"value="indumentaria" id="indumentaria">
+                            <label for="indumentaria">Indumentaria</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="categorias" value="hogar" id="hogar">
+                            <label for="hogar">Hogar</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="categorias" value="jugueteria" id="jugueteria">
+                            <label for="jugueteria">Jugueteria</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="categorias" value="vida sana" id="vida sana">
+                            <label for="vida sana">Vida sana</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="categorias" value="instrumentos musicales" id="instrumentos musicales">
+                            <label for="instrumentos musicales">Instrumentos musicales</label>
+                        </div>
+                    </div>
+
+                    <label>Seleccionar foto de perfil :</label>
+                    <input type="file" name="avatar" accept="image/*" class="register__foto"> 
+
+                    <label for="password">Nueva contraseña :</label>
+                <input type="password" name="password" placeholder="Debe contener una Mayuscula" required>
+
+                <label for="password">Confirmar contraseña :</label>
+                <input type="password" name="password" placeholder="Debe coincidir con la contraseña elegida" required>
+                
+           
+                <div class="contenedor_botones">
+
+                <button type="submit">Registrarse</button>
+                <button type="reset">Borrar</button>
+                
+            </div>
+            </form>
+        </fieldset>
     </main>
     <footer>
         <ul>
