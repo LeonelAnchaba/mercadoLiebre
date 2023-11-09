@@ -1,0 +1,20 @@
+.registro__main form{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    outline:solid black 1px;
+    gap: 10px;
+}
+
+.contenedor_botones {
+    margin:auto;
+    outline:solid red 2px;
+    
+}
+
+button {
+    width:30vw;
+    margin: 10px;
+    background-color: var(--color-celeste);
+    color:white
+}
