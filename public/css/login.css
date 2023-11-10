@@ -26,4 +26,15 @@ fieldset h2 {
     background-color: var(--color-celeste);
     color:white;
     letter-spacing: 1px;
+    transition: background-color 3s;
+}
+
+.button__login:hover {
+    background-color: #0022AA;
+}
+
+@media (min-width:1024px) {
+    .main__form__login {
+        max-width: 768px;;
+    }
 }
