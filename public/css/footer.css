@@ -34,14 +34,16 @@ footer h4 {
     footer {
         display:flex;
         flex-direction: row;
+        background-color: white;
     }
 
-    footer ul{
-        background-color: white;
+    footer ul{  
         width: 100%;
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
+        max-width: 1144px;
+        margin:auto;
     }
     .footer__div {
         width:33%;

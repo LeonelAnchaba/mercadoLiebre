@@ -6,6 +6,7 @@ body {
     width:100%
 }
 
+
 .main__section__title {
     width:90%;
     margin:auto;
@@ -18,16 +19,16 @@ body {
     background-color: white;
     margin:auto;
     margin-bottom:10px;
+    transition: box-shadow 1s;
 }
 .main__section__article div{
     display:flex;
     flex-wrap: wrap;
     padding: 15px;
     border-top: 1px solid var(--color-gris-claro);
-    transition: box-shadow 2s
 }
 
-.main__section__article div:hover{
+.main__section__article:hover{
 box-shadow: 0px 0px 10px rgb(100, 100, 100); 
 
 }
@@ -80,8 +81,7 @@ box-shadow: 0px 0px 10px rgb(100, 100, 100);
         display:flex;
         opacity:1
     }
-    .main__section__article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .main__section__article {    
         max-width: 280px;
     }
     .main__section__article h4{
@@ -102,4 +102,9 @@ box-shadow: 0px 0px 10px rgb(100, 100, 100);
         max-width: 230px;
     }
 }
+
+    .main__banner {
+        max-width: 1144px;
+        margin:auto;
+    }
 

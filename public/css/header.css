@@ -133,14 +133,14 @@ header i {
 
 @media (min-width: 1024px){
     .header__div__logo_barra_y_cuotas {
-        max-width: 1200px;
+        max-width: 1144px;
         margin:auto;
     }
     .header__div__logo_barra_y_cuotas input {
         max-width:300px;
     }
     .header__nav {
-        max-width: 1200px;
+        max-width: 1144px;
         gap:150px;
         margin:auto
     }
